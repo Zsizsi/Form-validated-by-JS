@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>form with js validation</title>
+</head>
+<body>
+<div class="body-container"> 
+    <form id="formValidation">
+        <div class="talk">
+            <h1>Let's talk</h1>
+            <p>Think you have what it takes?Show us.</p>
+        </div>
+        <div class="info">
+            <h2>1.Personal information</h2>
+            <div class="info-content-1-2">
+                <div class="info-content-1">
+                    <div class="text-input">
+                        <label for="fullname"></label>
+                        <input type="text" class="inpText" name="fullname" placeholder="Full name*">
+                        <p id="name"></p>
+                    </div>
+                    <div class="text-input">
+                        <label for="email"></label>
+                        <input type="text" id="email" name="email" placeholder="Email*">
+                    </div>
+                    <div class="text-input">
+                        <label for="re-email"></label>
+                        <input type="text" id="re-email" name="re-email" placeholder="Re-enter email*">
+                    </div>
+                </div>
+                <div class="info-content-2">
+                    <div class="text-input">
+                        <label for="phone"></label>
+                        <input type="text" id="phone" name="phone" placeholder="phone*">
+                    </div> 
+                </div>
+            </div>  
+            <div class="info-content-3">
+                <div class="text-input">
+                    <label for="address"></label>
+                    <input type="text" class="inpText" name="address" placeholder="Address*">
+                </div>
+                <div class="text-input">
+                    <label for="address"></label>
+                    <input type="text" class="inpText" name="address" placeholder="Address*">
+                </div>
+            </div>
+            <div class="info-content-4">
+                <div class="text-input">
+                    <label for="city"></label>  
+                    <input type="text" class="inpText" name="city" placeholder="City*">
+                </div>
+                <div class="text-input">
+                    <label for="state"></label>
+                    <input type="text" class="inpText" name="state" placeholder="State">
+                </div>
+                <div class="text-input">
+                    <label for="country"></label>
+                    <input type="text" class="inpText" name="country" placeholder="Country/Region*">
+                </div>
+                <div class="text-input">
+                    <label for="zip"></label>
+                    <input type="text" id="zipCode" name="zip" placeholder="Zip/Postal code">
+                </div>
+            </div>
+            <div class="info-content-5">
+                <div class="text-input">
+                    <label for="about">About</label>
+                    <input type="text" class="inpText" name="about" placeholder="How did you hear about us"> 
+                </div>
+            </div>
+        </div>   
+            <h2>2.Skill and Location</h2>
+        <div class="skills">
+            <p>Which is your primary design discipline?*</p>
+            <div class="skills-content-1">
+                <div class="radio-button">
+                    <input type="radio" class="radio-btn" id="research" name="research" placeholder="Design Research">
+                    <label for="research">Design Research</label>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" class="radio-btn" id="visuald" name="visuald" placeholder="Visual Design">
+                    <label for="visuald">Visual Design</label>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" class="radio-btn" id="ux" name="ux" placeholder="UX Design">
+                    <label for="ux">UX Design</label>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" class="radio-btn" id="frontend" name="frontend" placeholder="Front-end Dev">
+                    <label for="frontend">Front-end Dev</label>
+                </div>
+            </div>
+            <div class="skills-content-2-3">
+                <div class="skills-content-2">
+                    <p>Do you have any experience with other discipline?</p>
+                    <div class="checkboxholder">
+                        <input class="checkbox" type="checkbox" name="experience" id="visualDesign" value="visualDesign"/>
+                        <label for="visualDesign"> Visual Design</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox" type="checkbox" name="experience" id="uxDesign" value="uxDesign"/>
+                        <label for="uxDesign"> UX Design</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox" type="checkbox" name="experience" id="frontEndDevelopment" value="frontEndDevelopment"/>
+                        <label for="frontEndDevelopment"> Front-end Development</label>
+                    </div>
+                </div>
+                <div class="skills-content-3">
+                    <p>Where are you interested in working?</p>
+                    <p class="subtext">You must be legally authorized to work without visa <br>sponsorship in the location(s) you choose.</p>              
+                    <div class="checkboxholder">
+                        <input class="checkbox" type="checkbox" name="location" id="austin" value="austin"/>
+                        <label for="austin">Austin, Texas</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox" type="checkbox" name="location" id="newYork" value="newYork"/>
+                        <label for="newYork">New York, New York</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox" type="checkbox" name="location" id="toronto" value="toronto"/>
+                        <label for="toronto">Toronto, Ontario</label>
+                    </div> 
+                    <div class="checkboxholder">
+                        <input class="checkbox" type="checkbox" name="location" id="shanghai" value="shanghai"/>
+                        <label for="shanghai">Shanghai, China</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox" type="checkbox" name="location" id="dublin" value="dublin"/>
+                        <label for="dublin">Dublin, Ireland</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox" type="checkbox" name="location" id="hursley" value="hursley"/>
+                        <label for="hursley">Hursley, United Kingdom</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox" type="checkbox" name="location" id="boeblingen" value="boeblingen"/>
+                        <label for="boeblingen">Boeblingen, Germany</label>
+                    </div>
+                    <div class="checkboxholder">
+                        <input class="checkbox" type="checkbox" name="location" id="somewhereElse" value="somewhereElse"/>
+                        <label for="somewhereElse">Somewhere else</label>
+                    </div>   
+                </div>
+            </div>
+        </div>
+            <h2>3.Portfolio</h2>
+        <div class="Portfolio">
+            
+            <div class="fulline">
+                <p class="portf-p">Prove you're IBM next great designer by showing us who you are. What you've done. How you think. Tell us your story.</p>
+            </div>
+            <div class="fulline">
+                <input class="sizefour highline" id="inpText" type="text" name="portfolio" placeholder="Portfolio link*"/>
+            </div>
+            <textarea class="fulline" rows="6" placeholder="Anything else (another link, availability, etc.)?"></textarea>
+    
+                <button id='submitButton'>Submit</button>
+            
+        </div>
+    </form> 
+</div>
+<script type="text/javascript" src="form.js"></script>
+</body>
+</html>
